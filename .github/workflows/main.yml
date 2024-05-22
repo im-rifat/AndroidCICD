@@ -18,7 +18,8 @@ steps:
       distribution: 'adopt'
       java-version: '11'
 
-  - name: run: chmod +x gradlew
+  - name: Change wrapper permission
+    run: chmod +x gradlew
   - name: Build
     run: ./gradlew assembleDebug
     
